@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ziad Abdelazim's Personal Webpage</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #ffa500;
+            font-size: 2em;
+            transition: color 0.3s;
+        }
+
+        header:hover {
+            background-color: #333;
+        }
+
+        header:hover h1 {
+            color: #fff;
+        }
+
+        .container {
+            width: 80%;
+            margin: 120px auto 50px;
+            overflow: hidden;
+        }
+
+        section {
+            padding: 20px 30px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 1s ease-in-out;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        section:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.139);
+
+        }
+
+        .photo {
+            background: transparent;
+            text-align: center;
+            padding-top: 32px;
+            padding-bottom: 30px;
+            background: transparent !important;
+        }
+
+        .photo img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            border: 3px solid #ffa500;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .photo img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(255, 165, 0, 0.8);
+        }
+
+        h2 {
+            color: #ffa500;
+            text-align: center;
+            position: relative;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: #ffa500;
+            margin: 10px auto 0;
+            transition: background 0.3s;
+        }
+
+        section:hover h2 {
+            color: #fff;
+        }
+
+        section:hover h2::after {
+            background: #fff;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+            line-height: 1.6;
+            transition: color 0.3s;
+        }
+
+        a {
+            color: #ffa500;
+            text-decoration: none;
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+
+        a:hover {
+            color: #fff;
+            text-shadow: 0 0 5px #ffa500;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+            transition: color 0.3s;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Ziad Abdelazim's Personal Webpage</h1>
+    </header>
+
+    <div class="container">
+
+        <section class="photo">
+            <img src="https://lh3.googleusercontent.com/pw/AP1GczOmvNndjuHPmSiwmHTV_AqkGe0p13eq9WZiXqdhq7F0QJxSZeiatVJFWNEVIy3i2Rq5gkv0VQUq1LE4JIlBURelMvXHJdYW_7FF09pg8DPIdBz5IaKeHxyPXXYD4Gllc6e3lFlqLuWXqiP1ldt8RNNX2Ev57UIHd0jw0EPhirRsj9To48nZVhu6a4svn0zxFQTFVt58jE-WCtuTKwkmTBfA6F9jB2wqtYj4vQZ_aIMeCkgx5pcKRg4f9sewzdzSvyfoDoLuJjdO-wWuMNopyAxbKCV08KKiftMuS_wxa0Ct-p-6HSHXJhkl2GPqN7z1zEj--NcLrvqMn1urGqOGvzJamGzfluBkcrJncDI0DunTt42xBaV-CCkdwWzt1YI0QxVIBkjCgR6B7VGGMEEZGQoBoOSwaWpXBcD8AIHT4wWhjp7r1ZysBTuVqeRWdT_T7wSzBI3gckHX5_g1NYhDuQBE1H6jQ6RHqzW3rxrR0G-3ThoFZHbdQc1VamUssWdQ13JbKy2GC_5UaKd153Vht5LZHYICxHrrYI20feRlbAQ6N9tM5MRBt8tspn0E4QAifXUZIWXuroDnRIP_gTFxJtt7nkjqmxRVexW8JL0gNBbnU4wi8DZgtL09BdLBmttZiDctGaWl7jnhOhZ4GtJ2MzbPf1_pOAqzEFmDh9UnxeA6GycBWCB2eOiSOTACwnGrSMovX4ODSARdteny5OoTvK6Cs8yEri2vShQhnjl54cQNGMAI3V4SkvHJaazz9TOaU4qnxnZB6LXwA6cv2LYuvwWud5so0iVnON_mzIhNtF8KStRWxKP1pr8eq5pop7OIAcAd2kmE-fq3apeVmXkkJjiGiMUjGS4zTWS2-l_ZigGrTuHgsWUbqK-kbwCGD7fR_YCpIpvRzLOzxvbQoQG-uebOB-tvoGBnf4Go7vC-2G1L0ewp7zTh=w870-h885-s-no?authuser=1"
+                alt="Ziad's Photo">
+        </section>
+
+
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>Hello! My name is Ziad Abdelazim. my birthdate is 4/9/2001, originally from Giza, Egypt, and currently
+                living in
+                Doha, Qatar. I am in my last year at Qatar University, studying Computer Science. I have a passion for
+                swimming, table tennis, football, and volleyball. My goal is to pursue a master's degree in Computer
+                Science abroad at a well-ranked university and obtain a strong passport from that country.</p>
+            <p>I possess strong communication skills and a genuine passion for work, coupled with a diligent work ethic.
+                My overarching goal is to contribute to the betterment of society by fulfilling people's needs and
+                demands. I aspire to work for international programming companies to continually enhance my skills and
+                expertise.</p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <p><strong>Qatar University</strong> - Bachelor of Computer Science</p>
+            <p>Expected Graduation: May 2024</p>
+            <p><strong>Al-Andalus School</strong> - High School</p>
+            <p>Graduated: 2018</p>
+        </section>
+
+        <section id="professional-experience">
+            <h2>Professional Experience</h2>
+            <ul>
+                <li><strong>Event Jobs, Solusta</strong> (Jan 2021 - 2023)
+                    <ul>
+                        <li>VIP Gala Dinner</li>
+                        <li>Qatar Foundation (Invitation Center)</li>
+                        <li>WCM-Q Graduation 2022</li>
+                        <li>Qatar Foundation Alumni</li>
+                        <li>Gala Dinner in Museum of Islamic Art</li>
+                    </ul>
+                </li>
+                <li><strong>Internship, Huawei</strong> (Jul 2021 - Dec 2023)
+                    <ul>
+                        <li>Completed courses on Cloud Service, AI, Data Communication, RF, Quality, EHS, and SmartCare
+                        </li>
+                        <li>Worked in Delivery and Service department, reporting on Vodafone signals and providing
+                            suggestions</li>
+                    </ul>
+                </li>
+                <li><strong>FIFA World Cup 2022, Visa</strong> (Nov 2022 - Dec 2022)</li>
+                <li><strong>Data Collection, Qatar University</strong> (Feb 2024)
+                    <ul>
+                        <li>Collected data for research in World Aquatics Championship</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming Languages: Python, C++, C, Kotlin, Flutter, HTML, CSS, JavaScript, SQL, Java</li>
+                <li>Software Engineering: Use Case, Data flow, Use Case Specification</li>
+                <li>Microsoft Office: Word, PowerPoint, Excel, OneNote, Outlook</li>
+                <li>Data Communication: CISCO Packet Tracer</li>
+                <li>Languages: Arabic, English</li>
+            </ul>
+        </section>
+
+        <section id="hobbies">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Swimming</li>
+                <li>Table Tennis</li>
+                <li>Football</li>
+                <li>Volleyball</li>
+            </ul>
+        </section>
+
+        <section id="awards">
+            <h2>Awards</h2>
+            <ul>
+                <li>1st Best Short Film Among Qatar Schools, Ministry of Education and Higher Education (2017)</li>
+                <li>HCIA, Huawei Cloud Version 2.2 and 3.0 (2022)</li>
+                <li>2nd Best Presenter, Huawei Closing Ceremony (2022)</li>
+                <li>CCNA, CISCO (2023)</li>
+            </ul>
+        </section>
+
+        <section id="certificates">
+            <h2>Certificates</h2>
+            <ul>
+                <li>TEDx Youth Procession Leaders</li>
+                <li>Wijdan Aseel Workshop</li>
+            </ul>
+        </section>
+
+        <section id="organizations">
+            <h2>Organizations</h2>
+            <ul>
+                <li>Volunteer, The Ministry of Education and Higher Education (Dec 2019)</li>
+                <li>Volunteer, ANOC World Beach Games (Oct 2019)</li>
+                <li>Ceremony Organizer, Media Center for Youth (Dec 2019 - Jan 2020)</li>
+                <li>Ticketing Volunteer, Supreme Committee for Delivery and Legacy (Dec 2020)</li>
+                <li>Audience Volunteer, FIFA Club World Cup Qatar (Feb 2020)</li>
+                <li>Crowd Organizer, Qatar Red Crescent (Feb 2021 - May 2021)</li>
+                <li>Volunteer, Qatar Red Crescent (Sep 2021)</li>
+                <li>Stadium Safety Volunteer, FIFA Arab Cup (Nov 2021 - Dec 2021)</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <ul class="contact-info">
+                <li>Email: <a href="mailto:ziadabdel0409@gmail.com">ziadabdel0409@gmail.com</a></li>
+                <li>Phone: <a href="tel:+97433217939">+974 3321 7939</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/ziad-abdelazim-40a24518b"
+                        target="_blank">linkedin.com/in/ziad-abdelazim-40a24518b</a></li>
+                <li>GitHub: <a href="https://github.com/Ziad-za1905466" target="_blank">github.com/Ziad-za1905466</a>
+                </li>
+            </ul>
+        </section>
+
+    </div>
+
+</body>
+
+</html>
